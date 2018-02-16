@@ -1,0 +1,184 @@
+body{
+    font-family: sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: whitesmoke;
+    
+}
+
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+.button_1{
+    height: 33px;
+    background: mediumvioletred;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+}
+
+.dark{
+    padding: 20px;
+    background: pink;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    border: blue solid 1px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background: pink;
+    color: white;
+    padding-top: 25px;
+    min-height: 70px;
+    border-bottom: mediumvioletred  3px solid;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #marca{
+    float: left;
+}
+
+header #marca h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+header .actual a, header .highlight{
+    color: mediumblue;
+    font-weight: bold;
+}
+
+header a:hover{
+    color: mediumvioletred;
+    font-weight: bold;
+}
+
+#showcase{
+    min-height: 500px;
+    background: url("../img/slider/26758053_303981770006637_7523012808698450257_o.jpg") no-repeat 0 -180px;
+    text-align: center;
+    color: black;
+}
+
+#showcase h1{
+    margin-top: 50px;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 20px;
+}
+
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    text-align: center;
+    float: left;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 200px;
+    height: 200px;
+    border-radius: 35%;
+}
+
+/*Galery*/
+
+#galery img{
+    margin: 20px 10px;
+    width: 200px;
+    height: auto;
+}
+
+
+/*About Us*/
+
+#map{
+    height: 500px;
+    width: 80%;
+    margin: auto;
+    border: blue solid 1px;
+}
+
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 6px;
+}
+
+/*Main-col*/
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+/*Services*/
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: blue solid 1px;
+    margin-bottom: 5px;
+    background: pink;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: mediumvioletred;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
+@media(max-width: 768px){
+    header #marca, header nav, header nav li, #boxes .box, article#main-col, aside#sidebar, section#map, #ubi{
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    header{
+        padding-bottom: 20px;
+    }
+    
+    #showcase h1{
+        margin-top: 20px;
+    }
+}

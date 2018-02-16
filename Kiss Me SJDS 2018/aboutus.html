@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <header>
+    <div class="container">
+        <div id="marca">
+            <h1>Kiss Me <span class="highlight">S</span>JD<span class="highlight">S</span></h1>
+        </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                    <li><a class="actual" href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <h2 id="ubi">Donde Estamos?</h2>
+    </div>
+    <div id="map"></div>
+       <script>
+            function initMap(){
+                //Maps Option
+                var options = {
+                    zoom:18,
+                    center:{lat:11.252833,lng:-85.871167}
+                }
+                //New Map
+                var map = new
+                google.maps.Map(document.getElementById('map'), options);
+                
+                //Listen for click on map
+                google.maps.event.addListener(map, 'click', function(event){
+                    //Add marker
+                    addMarker({coords:event.latlng});
+                });
+                
+                //Array of Markers
+                var markers = [
+                    {
+                        coords:{lat:11.252833,lng:-85.871167},
+                        content:'<h2>Kiss Me</h2><h5>Helados Artesanos</h5>'
+                    }
+                ];
+                
+                //Loop through markers
+                for(var i = 0; i< markers.length; i++){
+                    addMarker(markers[i]);
+                }
+                
+                //Add Marker Function
+                function addMarker(props){
+                    var marker = new google.maps.Marker({
+                        position:props.coords,
+                        map:map
+                    });
+                    
+                    //Check Content 
+                    if(props.content){
+                        var infoWindow = new google.maps.InfoWindow({
+                            content:props.content
+                        });
+
+                        marker.addListener('click', function(){
+                            infoWindow.open(map, marker);
+                        });
+                    }
+                }
+            }
+    </script>
+    <section id="main">
+        <div class="container">
+            <article id="main-col">
+               <h1 class="page-tittle">Ofresemos</h1>
+               <ul id="services">
+                   <li>
+                       <h3>Helados</h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aut aspernatur, quos sit incidunt eos laboriosam dicta, minima vitae minus. Aliquid nobis illo nihil. Ex ullam maxime reiciendis voluptatem voluptatum?</p>
+                       <p>Precios: 20$ - 80$</p>
+                   </li>
+                   <li>
+                       <h3>Cuartos</h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aut aspernatur, quos sit incidunt eos laboriosam dicta, minima vitae minus. Aliquid nobis illo nihil. Ex ullam maxime reiciendis voluptatem voluptatum?</p>
+                       <p>Precios: 20$ - 50$</p>
+                   </li>
+                    <li>
+                       <h3>Eventos</h3>
+                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aut aspernatur, quos sit incidunt eos laboriosam dicta, minima vitae minus. Aliquid nobis illo nihil. Ex ullam maxime reiciendis voluptatem voluptatum?</p>
+                       <p>Precios: 10$ - 25$</p>
+                   </li>
+               </ul>
+            </article>
+            
+            <aside id="sidebar">
+                <div class="dark">
+                    <h3>Interesado?</h3>
+                    <form class="quote">
+                        <div>
+                            <label>Nombre</label><br>
+                            <input type="text" placeholder="Ingrese su Nombre">
+                        </div>
+                        <div>
+                            <label>Email</label><br>
+                            <input type="email" placeholder="Ingrese su Correo">
+                        </div>
+                        <div>
+                            <label>Mensaje</label>
+                            <textarea placeholder="Ingrese su Mensaje"></textarea>
+                        </div>
+                        <button class="button_1" type="submit">Enviar</button>
+                    </form>
+                </div>
+            </aside>
+        </div>
+    </section>
+    
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAApBKMImHDt98yTyX7ekzkIV_GnXU90Hg&callback=initMap">
+    </script>
+    <footer>
+        <p>San Juan Del Sur, Nicaragua &copy; 2018</p>
+    </footer>
+</body>
+</html>
