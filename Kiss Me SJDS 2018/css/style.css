@@ -113,15 +113,6 @@ header a:hover{
     border-radius: 35%;
 }
 
-/*Galery*/
-
-#galery img{
-    margin: 20px 10px;
-    width: 200px;
-    height: auto;
-}
-
-
 /*About Us*/
 
 #map{
