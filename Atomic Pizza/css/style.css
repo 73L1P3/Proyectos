@@ -1,5 +1,5 @@
 body{
-	font-family: sans-serif;
+	font-family: "Comic Sans MS", cursive, sans-serif;
 	font-size: 15px;
 	line-height: 1.5;
 	padding: 0;
@@ -36,7 +36,7 @@ header a{
 header li{
 	float: left;
 	display: inline;
-	padding: 0 13px 0 13px;
+	padding: 0 12px 0 12px;
 }
 
 header #marca{
@@ -67,9 +67,11 @@ header a:hover{
 	font-weight: bold;
 }
 
+/*Primera Parte*/
+
 .principal{
 	margin: auto;
-	width: 80%;
+	width: 100%;
 }
 
 .imagen{
@@ -105,7 +107,7 @@ header a:hover{
 .imagen .text h2{
 	color: red;
 	text-align: center;
-	font-size: 50px;
+	font-size: 45px;
 	padding-top: 10px;
 }
 .imagen:hover .text{
@@ -117,3 +119,47 @@ header a:hover{
 	opacity: 1;
 }
 
+/*Media Pagina*/
+
+.medio{
+	margin: auto;
+	width: 80%;
+	background: #ffcc00;
+}
+
+.medio h3{
+	color: black;
+	font-size: 40px;
+}
+
+.texto{
+	display: flex;
+}
+
+.texto p{
+	border: black 1px solid;
+	background: white;
+	color: black;
+}
+
+.pizza img{
+	width: 100%;
+}
+
+
+/* Localizacion */
+
+.mapa{
+	width: 80%;
+	position: absolute;
+	overflow: hidden;
+	margin: auto;
+
+	background-color: #666;
+	border: black 3px dotted;
+	text-align: center;
+}
+
+.textmap{
+	background: #fff;
+}
