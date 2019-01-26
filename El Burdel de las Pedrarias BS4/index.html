@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap WebSite</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <!--Font Awesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!-- Custom css-->
+    <link rel="stylesheet" href="/El Burdel de las Pedrarias BS4/Css/main.css">
+</head>
+<body>
+    <!-- Navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="/">
+                <img src="Img/logo.png" alt="Nicaragua" style="width: 20%;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Header -->
+    <header class="main-header">
+        <div class="background-overlay text-white py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 text-center justify-content-center align-self-center">
+                        <h1>Producto Literario Nicaraguense</h1>
+                        <p>"La crueldad y la indiferencia abundan y lo que se encuadra es un europeo carecente de humanismo y de misericordia. Hay excepciones,
+                        pero son pocas."</p>
+                        <a href="#" class="btn btn-outline-primary btn-lg text-white">Leer Mas.</a>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="Img/libri.jpg" alt="El Burdel de las Pedrarias" class="img-fluid d-none d-sm-block">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- News Letter -->
+    <section class="bg-primary text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <input type="text" class="form-control" aria-label="large" placeholder="Ingresa tu Nombre">
+                </div>
+                <div class="col-md-4">
+                    <input type="text" class="form-control" aria-label="large" placeholder="Ingresa tu Email">
+                </div>
+                <div class="col-md-4">
+                    <button type="button" class="btn btn-success btn-block">Subscribete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Features -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="card text-center border-primary">
+                        <div class="card-body">
+                            <h3>Escritor</h3>
+                            <p>Ricardo Pasos Marciaq.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white">
+                        <div class="card-body">
+                            <h3>Escrita</h3>
+                            <p>1995.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center border-primary">
+                        <div class="card-body">
+                            <h3>Ubicacion</h3>
+                            <p>Evoca la epoca colonial espańola en Nicaragua (1532-1539).</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center bg-primary text-white">
+                        <div class="card-body">
+                            <h3>Historia Chocante</h3>
+                            <p>Un relato de perversidad desbordante.</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+    </section>
+
+    <!--About-->
+    <section class="bg-light text-center">
+        <div class="container">
+            <div class="row">
+                <div class="m-5">
+                    <h3>Por que leer este libro?</h3>
+                    <p>Pasos Marciacq realizo en sus 511 páginas una labor concienzuda de investigación, una obra tan amplia y rica
+                    que el mérito de su alcance no se puede contener ni en un solo estudio ni menos en uno tan breve como éste.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Accordion-->
+    <section class="container text-center p-5">
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Por que este libro?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            El burdel de las Pedrarias capta admirablemente la esencia de esa experiencia: lo dificil del trópico, los peligros, las
+                            privaciones, los insectos, las enfermedades traídas por los marineros y los soldados. En fin, es el propósito de este estudio
+                            hacer destacar las escenas más sobresalientes que evocan la realidad de una conquista que forjó con sangre, enfermedades,
+                            y tormentos un nuevo mundo mientras borraba el original.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Cual es su concepto?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            El concepto fundamental de El burdel de las Pedrarias reside en las dos obsesiones que motivan y guían a la protagonista
+                            principal--dońa Isabel de Bobadilla--en todo lo que hace y dice; la primera se basa en su deseo de concretar su futuro con
+                            riquezas incalculables, algo que percibe como beneficios merecidos por lo que ella y su marido hicieron por la corona espańola
+                            en Panamá y luego en Nicaragua; y la segunda procede de su sueńo de sembrar una nueva raza; es decir, busca borrar la raza
+                            "inferior" y reemplazarla, ya que de todos modos queda destinada a desaparecer, para crear una raza de mestizos, y como el
+                            arquitecto de esta nueva sociedad proyectada, espera realizar una colonia de mestizos sumisos y obedientes que serán sus
+                            servidores fieles, lo cual puede asegurar también para Espańa una nueva fuente de riqueza.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Que Relata?
+                            </button>
+                        </h5>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Esta re-creación o evocación del pasado durante los primeros ańos de la colonialización de Nicaragua se realiza principal
+                            e irónicamente mediante dos voces autoreveladoras, las de dos espańolas: Dońa Isabel Bobadilla de Peńaloza, viuda del difunto
+                            Pedrarias, y María Fernanda, servidora leal de Pedrarias en Panamá y en Nicaragua, y luego de Dońa Isabel. ¿Y de dónde procede
+                            la ironía? Radica en el proceso de testimoniar porque así quedan exhibidos.
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Team -->
+    <section class="team text-center">
+        <div class="container p-5">
+            <h1 class="text-white">Equipo.</h1>
+            <p class="text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis, itaque?</p>
+            <div class="row">
+                <!--Member-->
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Img/icon.png" class="img-fluid round-circle w-50" alt="Person 1"><h3>John Carter</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="http://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="http://www.github.com" target="_blank"><i class="fab fa-github"></i></a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="http://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Img/icon2.png" class="img-fluid round-circle w-50" alt="Person 1">
+                            <h3>John Carter</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="http://www.twitter.com" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="http://www.github.com" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="http://www.instagram.com" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Img/icon.png" class="img-fluid round-circle w-50" alt="Person 1">
+                            <h3>John Carter</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="http://www.twitter.com" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="http://www.github.com" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="http://www.instagram.com" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="Img/icon2.png" class="img-fluid round-circle w-50" alt="Person 1">
+                            <h3>John Carter</h3>
+                            <p>Lorem ipsum dolor sit amet.</p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="http://www.twitter.com" target="_blank">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="http://www.github.com" target="_blank">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="http://www.instagram.com" target="_blank">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Contact-->
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h3>Contacto</h3>
+                    <p>Te gusto el diseno? Tienes alguna duda? Contactanos <3</p>
+                    <form action="">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                    <i class="fas fa-user-circle"></i>
+                                </span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Nombre">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">
+                                        <i class="fas fa-at"></i>
+                                </span>
+                            </div>
+                            <input type="email" class="form-control" placeholder="Correo">
+                        </div>
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="far fa-comments"></i></span>
+                            </div>
+                            <textarea class="form-control" aria-label="With textarea" placeholder="Tu Mensaje."></textarea>
+                        </div>
+                        <button class="btn btn-primary btn-lg btn-block">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                <div class="col-lg-3 align-self-center">
+                    <img src="Img/logo2.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <footer>
+        <div class="container p-3 text-white text-center">
+            <p>Copyright &copy; 2018</p>
+        </div>
+    </footer>
+    <!--Scripts-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>
