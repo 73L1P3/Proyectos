@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body{
     font-family: 'Titillium Web', sans-serif;
 }
@@ -15,4 +16,23 @@ header{
 
 footer{
     background: url(/Img/logo.png);
+=======
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+header{
+    margin-top: 75px;
+}
+
+#testimonial{
+    background: f1f1f1;
+    padding: 50px 0 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer{
+    background: url(/Img/logo.png);
+>>>>>>> 31a337616c1288f8b33fbbc56570bb2e7b974b9f
 }
